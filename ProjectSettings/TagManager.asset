@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - BalaEnemiga
+  - BalaJugador
+  - Enemigo
   layers:
   - Default
   - TransparentFX

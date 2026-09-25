@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 131338290}
   - component: {fileID: 131338289}
   - component: {fileID: 131338293}
+  - component: {fileID: 131338294}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Player
@@ -406,9 +407,21 @@ MonoBehaviour:
   speed: 10
   balaPrefab: {fileID: 8049205899129881003, guid: 264ed0210bec75a4e93ef79022cfb307, type: 3}
   fuerzaDisparo: 15
-  vidaMaxima: 3
-  barraDeVida: {fileID: 1146309865}
   escudoVisual: {fileID: 780060012}
+--- !u!114 &131338294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131338288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f2ed6d977b90546b4ccc842acbf48c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  saludMaxima: 3
+  healthSlider: {fileID: 1146309865}
 --- !u!1 &260855835
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000916, y: 0}
+  m_AnchoredPosition: {x: -5.0001144, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1146309863
@@ -993,8 +1006,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -930, y: -639}
-  m_SizeDelta: {x: 624.7629, y: 99.4555}
+  m_AnchoredPosition: {x: -286, y: -206.98}
+  m_SizeDelta: {x: 201.7853, y: 46.0408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146309865
 MonoBehaviour:
@@ -1035,7 +1048,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1169550936}
   m_HandleRect: {fileID: 0}
@@ -1479,6 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ca8313a9e17642b274e76ad996a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemigoTest
+  velocidadMovimiento: 2.5
   balaEnemigaPrefab: {fileID: 4379492688057458406, guid: 6281dae5bd5de7540bbba5675f642903, type: 3}
   fuerzaDisparo: 10
 --- !u!212 &2085644259
